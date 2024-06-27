@@ -805,6 +805,7 @@ dri3_create_screen(int screen, struct glx_display * priv)
 {
    xcb_connection_t *c = XGetXCBConnection(priv->dpy);
    const __DRIconfig **driver_configs;
+   const __DRIconfig **disp_driver_configs;
    const __DRIextension **extensions;
    const struct dri3_display *const pdp = (struct dri3_display *)
       priv->dri3Display;
